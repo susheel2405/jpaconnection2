@@ -5,7 +5,7 @@ import java.util.List;
 
 public class JDBCParentChildInsertService {
 
-
+    // creating a class
     public int getmaxProjectid(String query) {
 
         int max = 0;
@@ -15,12 +15,22 @@ public class JDBCParentChildInsertService {
         ResultSet resultSet;
 
 
+        //adding try catch block if any exceptions occur
         try {
 
+            //connecting to the driver
             Class.forName("com.mysql.cj.jdbc.Driver");
+
+            //connecting to the database
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sys", "root", "legion@2428");
+
+            // giving prepared statement
             psmt = con.prepareStatement(query);
+
+            // executing the query
             resultSet = psmt.executeQuery();
+
+            // if the resultset is null
             if (resultSet != null && resultSet.next()) {
                 max = resultSet.getInt(1) + 1;
             } else {
