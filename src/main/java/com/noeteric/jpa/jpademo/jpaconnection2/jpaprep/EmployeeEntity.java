@@ -1,10 +1,11 @@
 package com.noeteric.jpa.jpademo.jpaconnection2.jpaprep;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
+import lombok.Data;
 
+@Entity
+@Table(name = "Employee",schema = "sys")
+@Data
 public class EmployeeEntity {
     @Id
     @Column(name = "id")

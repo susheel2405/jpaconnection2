@@ -1,12 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
-             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence
-                                 https://jakarta.ee/xml/ns/persistence/persistence_3_1.xsd"
-             version="3.1">
-    <persistence-unit name="jpademo">
-        <class>com.noeteric.jpa.jpademo.jpaconnection2.Employee</class>
-        <class>com.noeteric.jpa.jpademo.jpaconnection2.Project</class>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
+    <persistence-unit name="JpaDemo">
+        <class>com.noeteric.jpa.jpademo.jappractise2.jpaprep.ProjectEntity</class>
+        <class>com.noeteric.jpa.jpademo.jappractise2.jpaprep.EmployeeEntity</class>
         <properties>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/sys"/>
             <property name="jakarta.persistence.jdbc.user" value="root"/>
