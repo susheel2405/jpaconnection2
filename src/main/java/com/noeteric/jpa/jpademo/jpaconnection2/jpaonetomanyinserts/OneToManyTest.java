@@ -56,8 +56,5 @@ public class OneToManyTest {
         karthavya.setDept("IT");
         karthavya.setSalary(75000);
         plumsoft.getEmployee().add(karthavya);
-
-
-
     }
 }
