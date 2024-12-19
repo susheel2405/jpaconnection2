@@ -5,11 +5,11 @@ import jakarta.persistence.*;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-@Table(name = "stocks", schema = "sys")
+@Table(name = "stocktesting", schema = "sys")
 public abstract class StockEntity {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
-private Long id;
+private int id;
 
 private double price;
 
@@ -23,11 +23,11 @@ private int duration;
         this.duration = duration;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

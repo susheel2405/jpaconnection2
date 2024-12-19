@@ -7,7 +7,7 @@ import jakarta.persistence.Persistence;
 public class StockService {
 
 
-    private EntityManagerFactory emf = Persistence.createEntityManagerFactory("Jpademo");
+    private EntityManagerFactory emf = Persistence.createEntityManagerFactory("JpaDemo");
     public void savestocks (StockEntity stock){
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();

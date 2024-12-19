@@ -5,7 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "optiona_stock", schema = "sys")
+@Table(name = "optional_stock", schema = "sys")
 public class OptionalStockEntity extends StockEntity {
 
 
