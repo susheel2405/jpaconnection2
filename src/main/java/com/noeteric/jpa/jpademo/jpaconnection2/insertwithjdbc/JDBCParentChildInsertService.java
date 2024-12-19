@@ -52,7 +52,7 @@ public class JDBCParentChildInsertService {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sys", "root", "legion@2428");
             pstmt = con.prepareStatement("insert into sys.employee_latest(eid,name,dept,state,salary,pid)" +
-                    "values(?,?,?,??,?)");
+                    "values(?,?,?,?,?,?)");
 
             pstmt.setInt(1, employee.getId());
             pstmt.setString(2, employee.getName());
