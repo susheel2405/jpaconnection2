@@ -11,7 +11,7 @@ public class ExternalEmployeeService {
     public ExternalEmployeeService(PayService payService) {
         this.payService = payService;
         System.out.println("External Employee Service Initialized");
-        payService.payService();
+        payService.pay();
     }
 
     @Autowired
